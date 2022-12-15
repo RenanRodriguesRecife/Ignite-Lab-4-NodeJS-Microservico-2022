@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Ignite-Lab-NodeJS-Microservico-dez-2022
 Ignite Lab NodeJS dezembro de 2022
 
@@ -43,7 +42,8 @@ Problemas com banco de dados de Microserviços:
 O Nest é um framework opinado. Ele dá uma conversão na forma que você deve criar a sua aplicação. A vantagem é que a opinião do Nest te dá menos atrito na tomada de decisão porém remove parde da liberdade.
 
 Vantagem é que muitas coisas já estão prontas dentro do Nest. Dificilmente você terar vários metodos de fazer determinada coisa.
-=======
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
@@ -117,4 +117,3 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
->>>>>>> 4bdf8c66026190b6ec06eaa6117a7b3340387b52
