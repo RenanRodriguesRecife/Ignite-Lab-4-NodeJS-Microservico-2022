@@ -24,6 +24,13 @@ O que o microserviço impacta:
   
   
 No microserviço precisa ter a independência sobre os microserviços.
+(Deve ser possível você derrubar todas as aplicações e deixar um microserviço que dentro do seu contexto ele vai funcionar de forma independênte)
 
 Em microserviço é precisa ter indempendência nos bancos de dados: Você vai ter um Banco de Dados para cada microserviço. Ex: imagina que um dev implementa uma Query muito pesada para a parte de Catálogos que derruba o sistema (você não pode ter esse banco lento atrapalhando as outras microtransações)
 
+Problemas com banco de dados de Microserviços:
+  - Vai pagar mais caro com banco de dados
+  - Vai precisar de duplicidade de dados. Para outros microserviços que vão consumir esses dados.
+  (O microserviço que realiza uma operação no BD emite uma mensagem para outros microserviços, os microserviços que tem interece nos dados irão duplicar os dados envolvidos na operação para seu banco)(obs: Não é todo os dados que são salvos, quando esses dados são salvos em outros banco de dados de outros serviços eles são salvos de maneira reduzida geralmente apenas as informações necessárias)
+  
+  
