@@ -51,20 +51,28 @@ Module / Service / Controller
 Decortator é decorar (acoplando um funcionamento dentro de outra classe ou função ou variável de uma maneira "mágica"...)
 
 Se usa o @
-EX:
+EX1:
 
 @Module()
+
+Ex2: Caso o decorator seja um controler e você colocar um atributo string. essa string magicamente será uma rota da aplicação
+
+@Controller('app') 
+
+http://localhost:3000/app
 
 #### Controller
 
 Sempre que você vai criar arquivos que vão definir rotas da sua aplicação
 
+São arquivos de porta de entrada da aplicação. São arquivos que vão lidar com chamadas http
+
 #### Module
 
 #### Service
 
-Classes sem um proprósito não muito específico. Uma classe genérica que vai ser usado dentro dos controller ou até de outros services
-Clásses que não são Controller ou Module. 
+São Clásses genéricas que não são Controller ou Module. 
+São Classes sem um proprósito não muito específico. Uma classe genérica que vai ser usado dentro dos controller ou até de outros services
 
 #### Inversão de Dependencia
 
