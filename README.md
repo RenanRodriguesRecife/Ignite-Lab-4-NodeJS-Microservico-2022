@@ -43,6 +43,43 @@ O Nest é um framework opinado. Ele dá uma conversão na forma que você deve c
 
 Vantagem é que muitas coisas já estão prontas dentro do Nest. Dificilmente você terar vários metodos de fazer determinada coisa.
 
+Module / Service / Controller
+
+
+#### Decorator
+
+Decortator é decorar (acoplando um funcionamento dentro de outra classe ou função ou variável de uma maneira "mágica"...)
+
+Se usa o @
+EX:
+
+@Module()
+
+#### Controller
+
+Sempre que você vai criar arquivos que vão definir rotas da sua aplicação
+
+#### Module
+
+#### Service
+
+Classes sem um proprósito não muito específico. Uma classe genérica que vai ser usado dentro dos controller ou até de outros services
+Clásses que não são Controller ou Module. 
+
+#### Inversão de Dependencia
+
+Quando você importa: ao invés de ir buscar a dempendencia em outro arquivo você deve receber a funcionalidade em um parêmetro quanto é instanciado (você deve usa um construturor fazer isso)
+
+Inversão de dependencia ajuda a trabalhar com teste
+
+#### Injeção de Dependencia
+
+Automatizar a insersão de dempendencia no momento que as classes são instanciadas
+
+A partir do momento que o controle pede uma depedencia, ele já automaticamente detecta que dentro do module que existe essa classes. O Nest automaticamente passa uma depedencia da classe como parametro no controller.
+
+
+41
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
