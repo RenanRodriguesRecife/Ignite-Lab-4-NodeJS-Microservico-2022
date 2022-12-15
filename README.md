@@ -1,6 +1,9 @@
 # Ignite-Lab-NodeJS-Microservico-dez-2022
 Ignite Lab NodeJS dezembro de 2022
 
+- [ ] Nest.js
+- [ ] 
+
 ### Monolítico:
 - Você tem uma aplicação única que se comunica com um banco de dados
 
@@ -33,4 +36,9 @@ Problemas com banco de dados de Microserviços:
   - Vai precisar de duplicidade de dados. Para outros microserviços que vão consumir esses dados.
   (O microserviço que realiza uma operação no BD emite uma mensagem  para outros microserviços (comunição assíncrona - faz um broadcast), os microserviços que tem interece nos dados irão duplicar os dados envolvidos na operação para seu banco)(obs: Não é todo os dados que são salvos, quando esses dados são salvos em outros banco de dados de outros serviços eles são salvos de maneira reduzida geralmente apenas as informações necessárias)
   
-  
+ 
+### Nest
+
+O Nest é um framework opinado. Ele dá uma conversão na forma que você deve criar a sua aplicação. A vantagem é que a opinião do Nest te dá menos atrito na tomada de decisão porém remove parde da liberdade.
+
+Vantagem é que muitas coisas já estão prontas dentro do Nest. Dificilmente você terar vários metodos de fazer determinada coisa.
