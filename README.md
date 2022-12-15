@@ -1,13 +1,13 @@
 # Ignite-Lab-NodeJS-Microservico-dez-2022
 Ignite Lab NodeJS dezembro de 2022
 
-Monolítico:
+### Monolítico:
 - Você tem uma aplicação única que se comunica com um banco de dados
 
 quando você precisa escalonar a aplicação ela vai precisar cada vez mais de recursos (CPU e Memória RAM) que deixa a aplicação encavalada. Se uma parte a aplicação (como nota fiscal) estiver com problema, ela acaba derrubando outra parte da aplicação que não tem a ver...
 
 
-Microserviços:
+### Microserviços:
 - Você divide a aplicação em várias aplicações menores (você pode ter um microserviço para cada area de especialização da aplicação)
 
 Você pode ter um microserviço para cada parte:
