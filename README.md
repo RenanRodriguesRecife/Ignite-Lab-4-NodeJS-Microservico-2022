@@ -76,7 +76,13 @@ São Classes sem um proprósito não muito específico. Uma classe genérica que
 
 #### Inversão de Dependencia
 
+Você tem uma classe que recebe as suas dependencias através de um construtor
+
 Quando você importa: ao invés de ir buscar a dempendencia em outro arquivo você deve receber a funcionalidade em um parêmetro quanto é instanciado (você deve usa um construturor fazer isso)
+
+Sempre você deve declarar, Ex: Declarando AppService 
+
+constructor(private readonly appService: AppService){}
 
 Inversão de dependencia ajuda a trabalhar com teste
 
@@ -84,8 +90,10 @@ Inversão de dependencia ajuda a trabalhar com teste
 
 Automatizar a insersão de dempendencia no momento que as classes são instanciadas
 
-A partir do momento que o controle pede uma depedencia, ele já automaticamente detecta que dentro do module que existe essa classes. O Nest automaticamente passa uma depedencia da classe como parametro no controller.
+O Nest automaticamente consegue perseber que: 
+A partir do momento que o controle pede uma depedencia, ele já automaticamente detecta que dentro do modulo existe essa classes. O Nest automaticamente passa uma depedencia da classe como parametro no controller.
 
+Dentro da classe deve ter o decorator @Injectable() para você conseguir fazer a injesão da classe dentro de outra.
 
 41
 
