@@ -69,6 +69,10 @@ São arquivos de porta de entrada da aplicação. São arquivos que vão lidar c
 
 #### Module
 
+O módulo é um acoplador. Ele acopla vários controllers e vários services. Ele é um ponto central para incorporar vários arquivos
+
+você pode ter modules dentro de modules
+
 #### Service
 
 São Clásses genéricas que não são Controller ou Module. 
