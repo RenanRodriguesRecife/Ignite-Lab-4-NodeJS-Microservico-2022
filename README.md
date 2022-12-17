@@ -91,9 +91,11 @@ Inversão de dependencia ajuda a trabalhar com teste
 Automatizar a insersão de dempendencia no momento que as classes são instanciadas
 
 O Nest automaticamente consegue perseber que: 
-A partir do momento que o controle pede uma depedencia, ele já automaticamente detecta que dentro do modulo existe essa classes. O Nest automaticamente passa uma depedencia da classe como parametro no controller.
+A partir do momento que o controle pede uma depedencia, ele já automaticamente detecta que dentro do modulo existe essa classes. O Nest automaticamente passa uma depedenc ia da classe como parametro no controller.
 
 Dentro da classe deve ter o decorator @Injectable() para você conseguir fazer a injesão da classe dentro de outra.
+
+Uma vantagem é que quem instancia o controlle diz qual vai ser a dependencia utilizada
 
 41
 
