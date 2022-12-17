@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Notification {
+  id          String @id
+  recipientId String //Referencia de uma Notificação que está em outro microserviço (duplicidade de dados)
+                     //A nomeclatura é muito importante ainda mais no contexto de trabalhar com microserviços
+                     //Como a mesma entidade pode está em vários microserviço você deve ter cuidado para não chamar da mesma maneira em outros microserviços
+                     //A mesma entidade pode ter nomes diferente em outros microserviços: Ex: A pessoa que tá comprando é um cliente mas no microserviço de logistica essa mesma pessoa ó o destinatário
+                     //Quando se cria uma chave estrangeira que referencia uma informação que está em outro serviço na grande maioria das vezes se acaba prefixando a referencia para o outro serviço: Ex: authUserId 
+  content     String
+  category    String
+  readAt      DateTime?
+  createdAt   DateTime @default(now())
+
+  @@index([recipientId]) //Indice para procurar todas as notificações de um usuário
+}

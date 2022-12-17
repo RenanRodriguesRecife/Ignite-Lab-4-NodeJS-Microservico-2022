@@ -7,9 +7,7 @@ import { AppController } from './app.controller';
 
 
 @Module({
-  imports: [
-    HttpModule
-  ],
+  imports: [HttpModule],
   controllers: [AppController],
   providers: [{
       provide: MailService,
