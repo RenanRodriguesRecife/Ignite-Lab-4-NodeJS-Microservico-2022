@@ -4,7 +4,7 @@ Ignite Lab NodeJS dezembro de 2022
 Microserviço de Notificação criado em NestJS
 
 - [ ] Nest.js
-- [ ] 
+- [ ] Aplicação independente de banco de dados
 
 ### Monolítico:
 - Você tem uma aplicação única que se comunica com um banco de dados
@@ -103,7 +103,18 @@ Dentro da classe deve ter o decorator @Injectable() para você conseguir fazer a
 
 Uma vantagem é que quem instancia o controlle diz qual vai ser a dependencia utilizada
 
-41
+## Design Software
+
+O processo que você vai definir as regras de negócio, casos de uso...
+requisitos funcionais, requisitos não funcionais...
+
+DDD - Pensar em domínio
+
+Pensar na aplicação desconexa de qualquer meio externo, fazer a aplicação funcionar sem depender de nada (ex: fazer a aplicação funcionar sem banco de dados)(geralmente faz a aplicação funcionar sem banco de dados e depois fazer ela funcionar com banco de dados com uma camada de persistência de banco de dados)
+
+O banco de dados é uma ferramenta para persistir dados, ele não deveria ser responsável ou interferir em nenhuma regra de negócio da aplicação.
+
+Se a aplicação é muito dependente de um BD isso é chamado de auto acoplamente de camadas.
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
