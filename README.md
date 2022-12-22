@@ -116,6 +116,13 @@ O banco de dados é uma ferramenta para persistir dados, ele não deveria ser re
 
 Se a aplicação é muito dependente de um BD isso é chamado de auto acoplamente de camadas.
 
+Geralmente quando se começa a pensar em uma aplicação, se olha para as tabelas do banco são pensadas como entidades da aplicação. Geralmente se começa a pensar no banco eu vou ter uma tabela de Clientes que será a entidade Clientes, vou ter uma tabela Notafiscal que será a entidade Notafiscal, vou ter uma tabela Pedidos  que será a entidade  Pedidos, vou ter uma tabela Faturas... Quando se passa para o paradigma de orientação de objetos as entidades acabam sendo vistas como Classes...Como é que começa a pensar em entidades sem banco de dados?
+Resp: Cada notificação é retratada como uma classe
+
+Tudo que é da camada externa (banco de dados, apis, rotas Http... ) você vai colocar na pasta infra
+
+Na pasta aplication você vai colocar todo o resto (tudo que é independente)
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
