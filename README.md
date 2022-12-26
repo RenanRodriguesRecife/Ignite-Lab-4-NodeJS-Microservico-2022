@@ -3,8 +3,8 @@ Ignite Lab NodeJS dezembro de 2022
 
 Microserviço de Notificação criado em NestJS
 
-- [ ] Nest.js
-- [ ] Aplicação independente de banco de dados
+- [x] Nest.js
+- [x] Aplicação independente de banco de dados
 
 ### Monolítico:
 - Você tem uma aplicação única que se comunica com um banco de dados
