@@ -1,5 +1,6 @@
 import { Content } from '../entities/content';
 import { Notification } from '../entities/notification';
+import { NotificationsRepository } from '../repositories/notifications-repository';
 
 interface SendNotificationRequest{
   recipientId: string;
@@ -15,6 +16,8 @@ interface SendNotificationResponse{
 }
 
 export class SendNotification {
+  constructor(private notificationsRepository: NotificationsRepository){}
+
   async execute(
     request: SendNotificationRequest,
   ): Promise<SendNotificationResponse> {
@@ -30,9 +33,12 @@ export class SendNotification {
     //Criar um Repository Pattern - é um intermédio entre a aplicação e a camada de persistência
     //A classe que faz o intermédio entre a classe que faz a comuniação entre banco de dados e aplicação de repositório
     //Aplica o conceito de inversão de dempendencia - nesse caso facilitar a migração para outro banco de dados
+    await this.notificationsRepository.create(notification);
+
 
     return{
       notification,
     }
   }
 }
+
