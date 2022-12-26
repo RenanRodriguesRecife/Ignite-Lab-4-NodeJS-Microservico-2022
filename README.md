@@ -5,6 +5,10 @@ Microserviço de Notificação criado em NestJS
 
 - [x] Nest.js
 - [x] Aplicação independente de banco de dados
+- [x] Banco de dados em memória (volátil)
+- [x] testes
+- [x] casos de usos de criação de notificação
+- [x] teste de casos de uso
 
 ### Monolítico:
 - Você tem uma aplicação única que se comunica com um banco de dados
